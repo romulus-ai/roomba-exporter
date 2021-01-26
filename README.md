@@ -25,17 +25,17 @@ USERNAME=<blid from configuration step 3>
 PASSWORD=<password from configuration step 3>
 
 # Optional environment variables
-PORT=<Port for endpoint exposing metrics> # Defaults to 7000
+PORT=<Port for endpoint exposing metrics> # Defaults to 9117
 ````
 
 2. Run as a standalone container or a sidecar in Kubernetes
 ```
 docker run \
-    -p 7000:7000 \
+    -p 9117:9117 \
     --env=ROOMBA_IP_ADDRESS=192.168.87.120 \
     --env=USERNAME=3192801C39119775 \
     --env=PASSWORD=foobarbaz123 \
-    quay.io/whirlwin/roomba-exporter:latest
+    romulus-ai/roomba-exporter:latest
 ```
 
 ## Compatability

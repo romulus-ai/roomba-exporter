@@ -35,4 +35,4 @@ const server = http.createServer((req, res) => {
     res.end(promClient.register.metrics());
 });
 
-server.listen(process.env.PORT || 7000);
+server.listen(process.env.PORT || 9117);
