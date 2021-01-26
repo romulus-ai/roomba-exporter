@@ -1,6 +1,8 @@
 # Roomba exporter
 
-Prometheus exporter for iRobot Roomba robot vacuum cleaners
+Prometheus exporter for iRobot Roomba robot vacuum cleaners.
+
+Extended the available Metric by everything we could get in the mission event. However the meaning of those values is not yet quite clear and may the translation to numbers is also incomplete.
 
 ## Configuration
 

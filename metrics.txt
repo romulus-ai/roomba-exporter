@@ -1,0 +1,35 @@
+# HELP roomba_state The current state of the Roomba, 0 = stop, 1 = charging, 2 = run, 3 = hmUsrDock, 100 = unknown
+# TYPE roomba_state gauge
+roomba_state{ip="192.168.1.29",state="charge"} 1
+
+# HELP roomba_cycle The current cycle of the Roomba, 0 = none, 1 = quick, 100 = unknown
+# TYPE roomba_cycle gauge
+roomba_cycle{ip="192.168.1.29",cycle="none"} 0
+
+# HELP roomba_expirem None
+# TYPE roomba_expirem gauge
+roomba_expirem{ip="192.168.1.29"} 0
+
+# HELP roomba_rechrgm None
+# TYPE roomba_rechrgm gauge
+roomba_rechrgm{ip="192.168.1.29"} 0
+
+# HELP roomba_error None
+# TYPE roomba_error gauge
+roomba_error{ip="192.168.1.29"} 0
+
+# HELP roomba_notready None, 16 may is, trashbin is full
+# TYPE roomba_notready gauge
+roomba_notready{ip="192.168.1.29"} 16
+
+# HELP roomba_mssnm None
+# TYPE roomba_mssnm gauge
+roomba_mssnm{ip="192.168.1.29"} 17
+
+# HELP roomba_sqft None
+# TYPE roomba_sqft gauge
+roomba_sqft{ip="192.168.1.29"} 205
+
+# HELP roomba_nmssn None
+# TYPE roomba_nmssn gauge
+roomba_nmssn{ip="192.168.1.29"} 1298
