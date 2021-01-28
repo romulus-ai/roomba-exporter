@@ -16,6 +16,7 @@
   "gnetId": null,
   "graphTooltip": 0,
   "id": 23,
+  "iteration": 1611740968849,
   "links": [],
   "panels": [
     {
@@ -275,11 +276,12 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "custom": {}
+          "custom": {},
+          "unit": "percent"
         },
         "overrides": []
       },
-      "fill": 1,
+      "fill": 6,
       "fillGradient": 0,
       "gridPos": {
         "h": 6,
@@ -292,11 +294,11 @@
       "legend": {
         "avg": false,
         "current": false,
-        "max": false,
+        "max": true,
         "min": false,
         "show": true,
         "total": false,
-        "values": false
+        "values": true
       },
       "lines": true,
       "linewidth": 1,
@@ -341,11 +343,11 @@
       },
       "yaxes": [
         {
-          "format": "short",
+          "format": "percent",
           "label": null,
           "logBase": 1,
-          "max": null,
-          "min": null,
+          "max": "100",
+          "min": "0",
           "show": true
         },
         {
@@ -354,7 +356,7 @@
           "logBase": 1,
           "max": null,
           "min": null,
-          "show": true
+          "show": false
         }
       ],
       "yaxis": {
@@ -770,7 +772,18 @@
       "points": true,
       "renderer": "flot",
       "seriesOverrides": [
-        {}
+        {
+          "alias": "/charge/",
+          "color": "#E0B400"
+        },
+        {
+          "alias": "/run/",
+          "color": "#1F60C4"
+        },
+        {
+          "alias": "/hmUsrDock/",
+          "color": "#8F3BB8"
+        }
       ],
       "spaceLength": 10,
       "stack": false,
@@ -1112,6 +1125,7 @@
       }
     }
   ],
+  "refresh": "30s",
   "schemaVersion": 26,
   "style": "dark",
   "tags": [
@@ -1155,12 +1169,12 @@
     ]
   },
   "time": {
-    "from": "now-2d",
+    "from": "now-15m",
     "to": "now"
   },
   "timepicker": {},
   "timezone": "",
   "title": "iRobot Roomba",
   "uid": "uOi_SMLGz",
-  "version": 4
+  "version": 5
 }
